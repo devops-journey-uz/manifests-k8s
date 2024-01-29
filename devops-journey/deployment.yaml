@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-journey-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: devops-journey
+  template:
+    metadata:
+      labels:
+        app: devops-journey
+    spec:
+      containers:
+      - name: devops-journey-container
+        image: devopsjourneyuz/devopsjourneyuz:latest
+        ports:
+        - containerPort: 3000 
+      imagePullSecrets:
+      - name: ghcr
