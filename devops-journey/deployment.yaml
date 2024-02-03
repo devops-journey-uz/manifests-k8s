@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: devops-journey-container
-        image: ghcr.io/devops-journey-uz/devops-journey-k8s:2f8fdb379ccda4f633bf1168904918236d056f4f
+        image: ghcr.io/devops-journey-uz/devops-journey-k8s:493ffeb93b5ea324eb6dad6c6ea2d37372f0e2f6
         ports:
         - containerPort: 3000 
       imagePullSecrets:
